@@ -56,3 +56,4 @@ input.locked{background:#eadfc8;color:#6b5646;cursor:not-allowed}
 #umm[hidden]{display:none}
 #umm button{color:var(--coffee);text-align:left;padding:.2rem 1rem;font-size:1.4rem}
 #umm button:hover{background:var(--pink)}
+[hidden]{display:none!important}
