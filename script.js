@@ -182,6 +182,11 @@ const H = {
   logout: () => logout()
 };
 document.addEventListener('click', e => { const b = e.target.closest('[data-a]'); if (b && H[b.dataset.a]) H[b.dataset.a](b.dataset.id); });
+// User menu: the name button opens Refresh / Change PIN / Log out
+const menu = open => { $('#umm').hidden = !open; $('#umb').setAttribute('aria-expanded', String(open)); };
+$('#umb').onclick = e => { e.stopPropagation(); menu($('#umm').hidden); };
+document.addEventListener('click', () => menu(false));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') menu(false); });
 
 /* ---------- Routing, login, startup ---------- */
 function route() {
@@ -209,7 +214,7 @@ async function start() {
   if (!API.token()) return loginScreen();
   try { ME = await API.me(); S = await API.list(); }
   catch (x) { ME = null; if (x.code === 'unauthorized') return logout(x.message); app.innerHTML = `<p class="paper err">${esc(x.message)} <button class="btn sm" onclick="location.reload()">Try again</button></p>`; return; }
-  $('#nav').hidden = false; $('#who').textContent = ME.name; route();
+  $('#nav').hidden = false; $('#umb').textContent = ME.name + ' ▾'; route();
 }
 addEventListener('hashchange', route);
 start();
