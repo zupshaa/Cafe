@@ -43,7 +43,6 @@ dialog::backdrop{background:#4a2f2299}
 .keep small{opacity:.8}
 button,.btn,select,input:not([type=file]){min-height:44px}
 button:disabled{opacity:.6;cursor:wait}
-nav #who{color:var(--pink);font:700 1.3rem Caveat,cursive;padding:0 .5rem}
 .stamp.topic{color:#7a5a8a}.card.note{background:#fbf3d6}
 .card .polaroid img{background:var(--kraft)}
 .visit-photo{max-width:100%;border:8px solid #fff;box-shadow:0 2px 6px #0003;transform:rotate(-1deg);margin:.5rem 0;min-height:120px;background:var(--kraft)}
@@ -51,3 +50,9 @@ input.locked{background:#eadfc8;color:#6b5646;cursor:not-allowed}
 .filebtn{cursor:pointer;display:inline-block;line-height:44px}
 #pv{max-width:100%;margin-top:.5rem;border:6px solid #fff;box-shadow:0 2px 6px #0003}
 .keep.instagram{border-color:#6fa8dc}.keep.youtube{border-color:#e06666}
+#um{position:relative;margin-left:auto}
+#umb{background:var(--pink);color:var(--coffee);border-radius:20px;padding:0 1rem;font-weight:700}
+#umm{position:absolute;right:0;top:calc(100% + 6px);display:flex;flex-direction:column;min-width:180px;background:#fffaf0;border:2px solid var(--coffee);border-radius:8px;box-shadow:3px 4px 0 #4a2f2233;z-index:10}
+#umm[hidden]{display:none}
+#umm button{color:var(--coffee);text-align:left;padding:.2rem 1rem;font-size:1.4rem}
+#umm button:hover{background:var(--pink)}
