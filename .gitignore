@@ -1,7 +1,0 @@
-.DS_Store
-Thumbs.db
-*.log
-.env
-node_modules/
-.clasp.json
-.clasprc.json
