@@ -1,4 +1,4 @@
-# Our Little Café Scrapbook
+# Between Sips
 
 A shared café journal. **Frontend:** GitHub Pages (this repo). **Backend:** Google Apps Script. **Database:** a private Google Sheet. **Photos:** a private Google Drive folder.
 
