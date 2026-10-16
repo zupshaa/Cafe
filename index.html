@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Between Sips</title>
+<meta name="theme-color" content="#593A36">
+<link rel="icon" type="image/png" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<nav id="nav" hidden><a class="brand" href="#/journal"><img src="images/icons/swirl.png" alt=""><b>Between Sips</b></a>
+<div class="links"><a href="#/journal">Journal</a><a href="#/bucket">Bucket list</a><a href="#/visited">Visited</a><a href="#/memories">Memories</a></div>
+<div id="um"><button id="umb" aria-haspopup="true" aria-expanded="false"></button>
+<div id="umm" hidden><button data-a="refresh">↻ Refresh</button><button data-a="changePin">Change PIN</button><button data-a="logout">Log out</button></div></div></nav>
+<main id="app" tabindex="-1"><div class="loader" role="status"><div class="mug"><i class="pour"></i><i class="steam"></i><i class="steam s2"></i><div class="cup"><div class="choc"></div></div><div class="handle"></div></div><p><img class="ico" src="images/icons/paw.png" alt=""><span id="lmsg">Pouring your hot chocolate, one dreamy swirl at a time…</span></p></div></main>
+<div id="toast" role="status" hidden></div>
+<script src="config.js"></script><script src="api.js"></script><script src="script.js"></script></body></html>
